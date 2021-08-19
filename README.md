@@ -1,2 +1,66 @@
-# Trial_Upload
-Test trial of a repository
+# CNFS Computer Network File System Whitepaper
+
+World's first blockchain technology protocol which provides controllable risk, complete life cycle security and privacy protection, high storage scalability, high data compatibility and high data computing efficiency
+
+
+## Table of contents
+
+- [Technology and Industry Overview]
+  - [Blockchain Technology]
+  - [Market Prospect]
+  - [Existing Problems]
+ - [CNFS Project Introduction]
+  - [Technology Introduction]
+  - [Distributed Storage]
+  - [Distributed Computing]
+ - [Business Model]
+ - [Core AAdvantages]
+ - [Routines]
+ - [Disclaimer]
+
+## Abstract
+
+Technology is almost the only power in the process of human civilization that can achieve superimposed progress. History may repeat, but technology will always move forward. The vision of the Internet is interconnected, decentralized and discrete. However, due to the rise of distributed computing, the Internet has become more and more centralized. As the era of blockchain 3.0 approaches, blockchain application can go far beyond the scope of finance, expanding many fields such as identity authentication, justice, audit, logistics, medical care, energy, etc., becoming the lowest level protocol of the future Internet. However, most of the current Data is stored in the cloud server cluster of central enterprises. Data verification and supervision become the most resource-consuming and complex problems to solve when Data is stored in a third party that is not fully trusted. At the same time, when the information resources are aggregated on the distributed computing platform, problems like platform monopoly, opaque operation, data loss, data untrustworthiness and privacy leakage, and Blockchain development will be significantly restricted.
+
+CNFS (Computer Network File System) is the world's first secure, controllable and content-addressable peer-to-peer hypermedia distribution protocol. It aims to provide content-based addressing services, replace HTTP protocol clusters, connect and integrate storage and computing resources. Besides, it offers open, fair and manageable distributed storage services. Relying on the CNFS protocol system builds a distributed storage cluster with high throughput, provides limited centralized distributed storage services and builds the next generation of the civil, political, and commercial integrated license-free chain.
+
+CNFS consists of a new set of Internet application layer protocols for modern Internet resources and facilities, a redefined cloud services, edge computing, Blockchain, data distribution, data fusion and distributed storage. It's the world's first blockchain technology protocol that provides controllable risk, complete life cycle security and privacy protection, high storage scalability, high data compatibility and high data computing efficiency.
+
+
+# 01
+## Technology and Industry Overview
+### 1.1 Blockchain Technology
+
+Blockchain technology is the next generation of disruptive technology after the steam engine, power and Internet. If the steam engine has released people's productivity, the power has solved people's basic living needs, and the Internet has completely changed information transfer methods. As a machine designed for trust, the Blockchain may completely change the value transfer of the whole human society. The significance of Blockchain is that it can build a more reliable internet system and fundamentally solve the fraud and rent-seeking phenomenon in value exchange and transfer. With the popularization of blockchain technology, the digital economy will be more authentic, and the economic society will become fairer and more transparent.
+
+As the birthplace of Internet technology, the United States has invested heavily in blockchain technology and applications. In 2017, at least eight states in the United States proposed bills to stimulate the development and application of blockchain technology. In February 2018, the U.S. House of Representatives held two consecutive hearings on Blockchain to explore new applications of blockchain technology. The U.S. state department emphasizes that blockchain technology can improve transparency and solve corruption, fraud. The U.S. Treasury is conducting pilot programs to determine whether blockchain technology can be used for the supply chain management. It has also taken measures to improve relevant laws on "anti-money laundering / combating terrorist financing (AML / CFT)" based on cryptocurrency and formed public-private partnerships (PPPs) with financial institutions to share information. South Burlington, Vermont, will utilize blockchain technology to record real estate transactions. California legislators have submitted a bill that the state's electronic records law should admit blockchain signatures and smart contracts. New York State Power Company TransActiveGrid proposed a new P2P distributed micro electric network based on Blockchain. Through the Blockchain, a microgrid network will be established to improve the utilization rate of clean energy. The remaining electricity is recorded on the Blockchain and can be sold to neighboring users through smart contracts.
+
+In January 2016, the U.K. government released a report called "Distributed Ledger Technology: Beyond Blockchain". The report points out that blockchain technology has great potential in changing public and private services. In addition to creating a public platform based on Blockchain to provide services for the whole people and society, the British government also plans to develop a system that can be a bridge between the government and public institutions. The Japanese government strongly supports blockchain technology and the cryptocurrency industry and has established the first blockchain industry organization - Japan Blockchain Association (JBA) and blockchain cooperation. Russia is vigorously promoting the construction of blockchain infrastructure. Sberbank, Russia's largest bank, cooperates with the government to transfer and save files with Blockchain, which has become a real application case of Blockchain. Canada has a vast blockchain entrepreneurial community, which brings together many top blockchain talents, including Vitalik Buterin, the founder of Ethereum. The Canadian Securities Regulatory Commission (CSA) recently launched a new "Fintech Sandbox" program to promote Canada's blockchain industry development.
+
+Blockchain technology originated from the open-source community and has grown fast in the community. Since then, it has gradually attracted the attention of financial institutions, I.T. giants and other institutions. For example, open-source projects represented by Bitcoin and CNFS mainly focus on Public Blockchain, creating a public platform for Blockchain; Hyperledger, launched by the Linux Foundation in 2015, focuses on Consortium Blockchain technology. At the same time, IBM, Microsoft Azure, AWS and other I.T. giants are trying their best to build the infrastructure supporting blockchain applications, Blockchain as a Service (BaaS).
+
+In recent years, the United Nations, the International Monetary Fund and other Institutions and many developed countries have released a series of reports on Blockchain to explore blockchain technology and its applications. At present, the application of blockchain technology has gone beyond the financial field and gradually in the supply chain, credit reference, identity authentication, charity, Internet of things and many other areas. Since 2012, the number of global blockchain enterprises has increased at a compound growth rate of more than 65.2%. An optimistic forecast is that by 2025, 10% of global GDP will be stored using blockchain technology. According to the estimation of DMR, the scale of the blockchain industry is expected to reach 20 billion U.S. dollars by 2024.
+
+The core concept of Blockchain is a decentralized distributed ledger, which is composed of an encryption algorithm, consensus mechanism, smart contract and other technologies. It integrates multiple isolated databases and stores thin nodes variously in a distributed way jointly maintained by numerous nodes; due to decentralization, tamper proof and traceability, Blockchain is widely used in many fields, such as the financial industry, medical treatment and supply chain. The combination of Blockchain and decentralized storage brings us plenty of opportunities and possibilities. In the past decades, the centralized storage scheme has made significant contributions to the development and popularization of the Internet. However, with the development of the Internet and the advent of big data, the volume of Data is growing exponentially. Faced with the challenge of massive data storage, the traditional centralized storage system has exposed various drawbacks, such as data concentration, the poor security and so on, which cannot meet the current storage needs. At present, both traditional centralized storage and optimized distributed storage still have many disadvantages.
+
+- **(1) Insufficient storage space and high cost**
+
+   The Internet cloud storage service is developing rapidly, and many service providers begin to seize the market. With the advent of big data, the Data is overgrowing, and the centralized storage space is limited. To provide users with sufficient storage space, cloud storage service providers need to buy many servers for continuous operation and maintenance, and the cost is very high. Service providers invest a lot of money to purchase cloud storage services per year, but the profit model of cloud storage services is not mature. Many users tend to use free services, and it is challenging to provide profits for enterprises. In the long run, likely, service providers will not bear substantial economic losses and eventually lead to the termination of their operations.
+
+- **(2) The bandwidth is limited, and the transmission distance is long**
+
+   Data is increasing rapidly every day in the big data era, but the efficiency of the central system is low. Centralized storage needs to upload all data to the main server for processing. The load of the central server is enormous. The massive data storage and transmission process have brought significant challenges to the bandwidth of the central servers. Because of the bandwidth limitation, and the centralized servers are usually located in remote areas far away from the actual users, data transmission speed is slow, and it is challenging to meet users' needs.
+
+- **(3) Poor storage security**
+
+   When using centralized servers to provide data storage services, data centralization is a severe core problem. Centralized servers are often concentrated in one or more places. Once power failure occurs, lots of related businesses will be paralyzed. In addition, the centralized server sometimes accepts massive request-response of data storage, which may lead to a system crash in the peak period. Once the server fails, users will bear the risk of complete loss of data information. In addition, due to the centralized storage of data in the central servers, they are primary targets of hacker attacks. The security of data storage is hard to guarantee.
+
+- **(4) Lack of privacy protection**
+
+   With the continuous expansion of the cloud storage market, the number of its users is also overgrowing. Because the services are convenient, fast, and easy to lose, more and more users like to upload their photos, videos, and other types of files to the network storage. However, the data privacy issues are also worthy of vigilance. User data is stored on the server provided by the cloud storage service provider and managed by the administrator employed by the service provider, who can directly view and delete almost all the files uploaded by users, which may cause user privacy disclosure problems. At the same time, due to artificial intelligence development, some companies are also driven by profits that may steal user data to train neural network algorithms. Although there are rules and regulations to restrict these behaviors, it's challenging to solve user privacy leakage.
+
+   Massive data has become the most valuable asset but also requires more advanced data storage methods. With the emergence of blockchain technology, the concept of decentralization has gained the broad approval of the people. At present, a new data storage management technology suitable for non-trust scenarios is urgently needed, that is, a decentralized storage scheme. Therefore, distributed storage based on Blockchain has become an inevitable trend.
+
+- **(5) Supervision of decentralized distributed storage is difficult**
+
+   Unlike traditional centralized systems, decentralized distributed storage has the characteristics of P2P and joint participation, which ensures the freedom and privacy of participants. Taking Blockchain as an instance, all participants are equal in rights and obligations, and there are no third-party organizations to manage them. Once the content is stored in the Blockchain, it is difficult to tamper with. However, there are also some disadvantages because it leads to a lack of supervision. There may be someone maliciously spreading some illegal files in the platform, which is difficult to delete, making the network a hotbed of illicit data storage.
