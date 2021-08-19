@@ -64,3 +64,58 @@ The core concept of Blockchain is a decentralized distributed ledger, which is c
 - **(5) Supervision of decentralized distributed storage is difficult**
 
    Unlike traditional centralized systems, decentralized distributed storage has the characteristics of P2P and joint participation, which ensures the freedom and privacy of participants. Taking Blockchain as an instance, all participants are equal in rights and obligations, and there are no third-party organizations to manage them. Once the content is stored in the Blockchain, it is difficult to tamper with. However, there are also some disadvantages because it leads to a lack of supervision. There may be someone maliciously spreading some illegal files in the platform, which is difficult to delete, making the network a hotbed of illicit data storage.
+
+### 1.2	Market Prospect
+
+The birth and popularization of the Internet have stimulated the rapid development of information technology, making modern society from the industrial age to the information age.
+
+The evolution of the times has brought great convenience to human life. However, the ubiquitous application of information technology has also led to the explosive growth of data. According to IDC statistics, the total amount of global data generation exceeded 1zb in 2010, reached 33zb in 2018, and exceeded 175zb in 2025. With the advent of the era of data explosion, many technological innovations, such as distributed computing, big data and artificial intelligence, have been fully developed; Simultaneously, the explosive growth of data also brings significant challenges to information processing technology. How to effectively store, compute and transfer big data with 5V characteristics is the focus of the new generation of information technology.
+
+Data storage is the primary problem in information processing, which provides the basis for computation and transfer. With the growth of data volume, availability, I / O capacity and other requirements of services and applications, the storage system is also evolving, from the early direct connection mode to the network mode, then the distributed storage mode in recent years. Traditional centralized storage has the advantages of high reliability, good stability and ease to use. However, the explosive growth of data also exposes some defects, such as low horizontal scalability, high cost and poor connectivity between different systems. It is easy to form a data island, which leads to the high cost of data center management and maintenance. The distributed storage mode is to store the Data on several independent devices (using standard servers instead of expensive professional devices) in the network and manage it by running storage software to form a whole to provide storage services.
+
+Nowadays, global data storage and data computing are facing a subversive revolution from centralization to distribution. Many tech giants take the lead in the layout of new technologies. The market related to distributed technologies shows a rapid development trend. The future development prospect of the distributed data storage and data computing industry is promising.
+
+### 1.3	Existing Problems
+
+**Security**
+Blockchain is born for security, but also undertakes security threats. Security threat is one of the most critical issues that Blockchain has faced so far. Blockchain is facing the challenges of algorithm security, protocol security, usage security, implementation security, and system security from the analysis.
+
+**Privacy**
+The traditional distributed storage architecture does not consider the privacy leakage problem in the process of data collection. In general, the perceptual data collected by mobile users, such as real-time location, personal health data and identity information, are usually sensitive information. Submitting these data to the data center in plaintext will inevitably cause a potential severe danger of privacy leakage.
+
+**Scalability**
+Consensus mechanism, broadcast communication, data encryption, and decryption algorithm optimization cannot solve the scalability problem of the large-scale decentralized system; The lightning network and state channel are the solutions executed out of the chain, which is contrary to the concept of blockchain decentralization and cannot be widely used due to the complicity use and bad user experience. Traditional blockchain storage has very low scalability.
+
+**Efficiency**
+Fog computing technology reduces the pressure of the core network, has lower network delay, and runs much fast; The mobility of storage is very suitable for the Internet of things, online games, and data transmission because the storage cost can be significantly saved. Moreover, considering data storage redundancy, various solutions such as cloud storage are based on distributed low-cost redundant structures and high-speed storage based on memory in the existing centralized architecture. Compared with the need for global copy, the implementation cost of the ecological solution is meagre.
+
+**Cost**
+The existing schemes do not consider the data access control problem in the process of range query. In real life, different end-users often correspond to other accessible datasets, and specific users are generally only allowed to search in their authorized datasets. However, embedding data access control in the scope search of spatial data under ciphertext will increase the complexity and cost of the model.
+
+
+
+# 02
+## CNFS Project Introduction
+### 2.1	Technology Overview 
+
+CNFS consists of a new set of Internet application layer protocols for modern Internet resources and facilities, a redefined cloud services, edge computing, Blockchain, data distribution, data fusion and distributed storage. It’s the optimal solution under the condition of the modern Internet. By integrating the P2P network, distributed hash table (DHT), data encryption and fragmentation, IPFS network protocol, multichain incentive mechanism, block exchange and other technologies, a distributed storage network dispersed, which forms a new computing paradigm and cooperation mode in an untrusted competitive environment with meager cost, and it provides high quality and low-price file storage service for the world. QEDB quantum database is built based on CNFS blockchain nodes. CNFS protocol supports the creation of fully distributed applications. It aims to construct a network file system under the supervision of security nodes where users can upload, store, and share files freely in a distributed way. The technical architecture of CNFS is shown in Figure 1
+
+CNFS consists of more than one protocol, just like TCP/IP consists of a four-layer protocol stack model. It includes five protocols: storage layer protocol, distributed network resource management protocol, storage content retrieval protocol, distributed computing protocol and blockchain application management protocol. As shown in Figure 2
+
+The CNFS resource management layer allocates the computing power of the whole network, removes unstable computing power according to algorithms, makes real-time statistics, reports adequate computing power, and provides solutions for the dynamic release and management of contract services. The supervisor node in the CNFS resource management layer scans the real-time operation status of the whole network, eliminates equipment with problems, improves the score of the equipment with good resource status, and ensures the network resources highly available all the time.
+
+The distributed storage layer uses the distributed storage protocol to realize the distributed database, which is in physical distribution and logical unification, guarantees the data atomicity and consistency, and satisfies the distributed database of blockchain fragmentation extension. Moreover, the distributed database retrieves data based on the content hash, ensuring the authenticity and reliability of the distributed data and improving inspection and audit speed quality. The optimized distributed hash table technology is used to record the file's metadata to achieve the file addressing function, realizing the content-based addressing or data block based addressing in the distributed data network.
+
+The distributed computing layer dynamically allocates computing tasks to the edge network nodes to realize distributed computing. It will dynamically select the computing nodes that meet the requirements of the neighboring nodes to form a temporary computing cluster and perform the computing tasks. The service providers will not need to maintain the computing nodes themselves or consider the node selection problem. Different services can share the same computing equipment, dramatically reducing the maintenance cost and increasing general efficiency.
+
+The blockchain application management layer aims to realize the cross-chain interconnection of many heterogeneous blockchain applications and form a distributed blockchain application network with interconnection, interoperability and mutual trust based on massive data. Through multichain ecological consensus, the connection between decentralized blockchain platforms is realized, the atomicity of cross-chain operation is solved, and the value exchange of multichain ecology on the CNFS platform is realized. For different ecological applications, multiple Dapps are built based on the multichain blockchain structure to realize the trusted value exchange on the chain. It’s a trustful distributed application trading platform with a transparent transaction process, whole chain supervision, disintermediation, and data privacy protection. The central currency trusteeship is eliminated. The consensus mechanism of group supervision and management plan is adopted. The smart contract is executed automatically to form an autonomous community with independent value interaction.
+
+### 2.2	Distributed Storage
+**Mimicry architecture for metadata services**
+
+Metadata node is a high-risk target in the distributed storage system, which is the preferred target for attackers regarding the difficulty of implementation and the benefits. Similarly, from the perspective of defenders, if we can protect metadata services through the CMD security mechanism, we can get the maximum-security benefits; In terms of protection cost, we need to pay extra cost and performance overhead for heterogeneous redundancy. Therefore, if metadata service is designated as pseudo protection boundary, it can significantly reduce the cost and the load pressure of agent and has better realizability. At the same time, for the protection of data nodes, the DHR structure could be optional. Based on existing block redundancy, heterogeneity is introduced to enhance the storage security of physical data blocks.
+
+CNFS lab designed Mimic-HDFS architecture for metadata services. To reduce the complexity of design and implementation while ensuring compatibility with the original system, Mimic-HDFS still uses the essential node functions and interaction process of HDFS, as shown in Figure 3. 
+
+Aiming at the security problems in the current distributed storage systems, we introduce a dynamic, heterogeneous and redundant security mechanism to enhance the system's defense capability against vulnerabilities and Backdoors. Firstly, we analyze the main threats and attack methods the distributed storage systems face, locates their "core weakness, " and proposes a specific security construction method based on the cost and effectiveness of protection.
+ 
