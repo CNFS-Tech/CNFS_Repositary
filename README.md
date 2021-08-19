@@ -119,3 +119,108 @@ CNFS lab designed Mimic-HDFS architecture for metadata services. To reduce the c
 
 Aiming at the security problems in the current distributed storage systems, we introduce a dynamic, heterogeneous and redundant security mechanism to enhance the system's defense capability against vulnerabilities and Backdoors. Firstly, we analyze the main threats and attack methods the distributed storage systems face, locates their "core weakness, " and proposes a specific security construction method based on the cost and effectiveness of protection.
  
+## 2.3 Distributed Computing
+ 
+**2.3.1 Execute tasks**
+
+The task pool consists of two tasks:
+  - System generated tasks
+  - User tasks. When users submit tasks to solve some problems, they will set thentask reward
+  
+A small smart contract system is attached to any task to submit the contract and calculation results. Mining will get both task return and bookkeeping return.
+
+A standard training task includes the following items:
+- Training data. Datasets can be provided or customized
+- Training script. Training methods come from standard deep learning models (RNN, CNN, LSTM etc.) and pther customized methods.
+- Training rewards. A.I. miners complete the training task, and the amount of reward needs to be predefined. The higher the rewards, the higher the training priority. The task system is stored on the integrated IPFS, which stores the algorithm and task after encryption. When the miner receives the calculation task, it will return its hardware parameters and download the calculation task and training dataset remotely. After the standard distributed TensorFlow is encapsulated, the appropriate redundant calculation is added to ensure the reliability of the calculation results.
+  
+**2.3.2 Artificial Intelligence Miner**
+
+The computing power of a 1080Ti graphics card is 7514 GFLOP/zs. The calculation time of 30 iterations is 19 hours and 43 minutes using the Caffe framework to train 1.3 million image data of the GoogLeNet model on GTX 1080Ti. The cost time of six card parallel computing can be reduced to 3.5 hours.
+
+Any GPU miner that supports CUDA (mainly NVIDIA Series graphics card) can integrate A.I. mining system. A.I. miner is preinstalled with standard artificial intelligence algorithms, such as CNN, RNN, DNN, and many other commonly used libraries, such as TensorFlow. The upgrade client integrated with the system can automatically update the A.I. preinstalled support library. The first batch of computers will mainly be preinstalled with Python 3.6 support library. The accounting client supporting Ethash is also included.
+
+Three kinds of Income can be obtained from A.I. miners:
+-	Accounting income: the algorithm based on Equahash is well supported. But this part of Income is generally less than the Income of A.I. computing.
+-	A.I. computing income: A.I. computing income is an essential income source.
+-	IPFS Income: miners can start dual mining mode, which supports SIA, storj. IPFS can also be used to pay the data storage cost in A.I. computing process.
+
+**2.3.3 DAPP Development**
+
+Distributed computing plays a vital role in the development of DAPP. The Ethereum community names innovative contract-based applications DAPP (Decentralized Applications). DAPP's design goal is to pro the smart contracts with friendly interfaces and some additional functions, such as IPFS. DAPP can run on a centralized server that can interact with Ethereum nodes. For example, the famous etherdelta, EtherCAT and so on.
+
+However, the current smart contract is not enough for the decentralized A.I. application (DAI App). Here are the reasons:
+- Ethereum smart contract does not have A.I. computing modules
+- EVM is a Turing complete virtual machine, but its consensus computing system only supports simple tasks, not complex A.I. computing
+-	Ethereum mining client does not support libraries required by A.I. computing
+
+The operation of A.I. heavily depends on the support of various development libraries, and distributed computing is its primary task. A separate computing client can implement the support library for related computing tasks.
+
+However, as a commercially available A.I. application, the ledger and payment function of Blockchain is still the core component of the system. And because of the scarcity of A.I. computing resources, sharing computing power will become a condition. Each user can rent computing power to complete their tasks. Each DAI App developer writes a standard smart contract according to their own needs.
+
+### 2.4 Cross Cross-chain innovation
+
+It’s a feasible Multichain scheme in CNFS. In CNFS architecture, files of different companies can be stored in other storage locations to achieve isolation.
+
+In each storage location, there are three chains: transaction, file operation chain and file storage main chain. The main chain of file storage has many branch chains, and the branch chains are divided according to the file types. The file storage branch chain parallels the primary storage chain of a field. In this way, different files and metadata information can be stored in other branch chains to improve the efficiency of retrieval and classification. In addition to a storage location, transaction main chain and file operation main chain operate different storage locations. The two main chains rely on relay nodes for information exchange. The transaction branch and file operation branch of the file operation main chain in each storage location will be connected to two main chains, respectively. The file operation branch records the query, transfer and other operations of the file in the storage location, and the transaction branch records the token information. The multichain structure can be used to realize cross-domain token transaction and file operations. The file operation branch chain and file storage main chain in each storage location is also connected through relay nodes. When reading a file, the file operation branch verifies the file to the file storage main chain through the relay node and then executes and records the file operation. CNFS uses the characteristics of Multichain to divide files according to file types. It stores files of different companies in different storage locations to achieve domain isolation. Other storage locations can customize smart contracts to realize different storage logic.
+
+### 2.5 Consensus Mechanism
+
+At present, the mainstream blockchain consensus mechanisms are Proof of Work (POW), Proof of Stake (POS), Delegated Proof of Stake (DPOS) and so on. These algorithms require nodes joining the network to prove that they are more qualified to add a blockchain than other nodes. In the process of proof, colossal computing power is required, which results in a waste of power resources. Thus, the Oracle Proof of Work (OPoW) consensus mechanism is adopted in this architecture.
+
+CNFS has developed and optimized the PoW consensus protocol to form an OPoW consensus based on Oracle. The consensus structure is shown in Figure 4. OPoW solves many existing problems such as the waste of computing power and unequal mining resources and realizes green mining, adequate storage and efficient computing. Each network node regularly reports the storage, CPU, memory, bandwidth and other software and hardware resources of the device to itself and the relay node. Its own running Oracle machine scores the nodes in small data analysis of IoT devices and records them in the public blockchain ledger. At regular intervals, multiple sets of devices are selected from the resource ledger according to consensus. The election and consensus execution of miner nodes are asynchronous processes. By judging the reliability of network resources based on Oracle, OPoW can be used to achieve consensus safely, reliably and efficiently.
+
+This architecture is based on the reliable network resource execution environment determined by Oracle. It combines with RBFT (Robust Byzantine Tolerance) and Raft consensus algorithm and proposes the OPoW consensus mechanism based on the vision of controllable resources of the whole network. OPoW can achieve a safe and efficient consensus on reducing the waste of computing power and speeding up the block generation speed. It can effectively reach a consensus on the validity and consistency of block data in a decentralized and avoid the divergence phenomenon in the system. 
+
+# 3
+## Business Model
+### 3.1 token Mechanism
+
+**Mixed Exponential Mechanism**
+
+Traditional blockchain projects like bitcoin adopt token mechanisms based on a simple exponential decay model. This mechanism continuously reduces the reward parameters from the initial block reward, and often the number of contributors involved in the early stage is small, and the density is low. Therefore, in the early stage, participants will get many low-cost value tokens, while in the later stage, the block reward of participants is less.
+
+According to this traditional exponential decay model, it will cause a short-term explosive power in the early stage, but because of the reward decay, it will harm the CNFS economy. Specifically, this will encourage early participants to invest in specific hardware to compete for block rewards by mining with encapsulated storage. However, after consuming these early block rewards, they will gradually leave, failing to form a fair competition environment and severe consequences to network security and ecosystems, such as hardware abandonment and user data loss. Meanwhile, due to the decrease of block rewards, new participants have little incentive to improve the network. It will also lead to the fact that most of the network subsidies are paid entirely based on time rather than the actual amount of storage.
+
+To encourage storage and long-term storage investment consistency rather than just fast encapsulated storage, CNFS introduces the mixed exponential mechanism instead of the exponential decay model to maintain the value token. This mechanism can improve the block reward by increasing the total storage computing power on the network. In this way, the structure of the original exponential decay model can be retained, and it can be improved at the initial time of network startup to ensure that the block reward of CNFS is more matched with the utility provided by the whole network for users.
+
+Specifically, in the mixed exponential mechanism, one part of the reward comes from the simple exponential decay mechanism, the other part comes from the network ecosystem. With this mechanism, CNFS mining will be more profitable. The simple exponential decay mechanism provides additional incentives for early miners and provides anti-vulnerability when the network is influenced. The Benchmark model will generate more tokens when the network accumulates more value. When the network can unlock more significant potential, the protocol will create more tokens to stimulate more transactions. This will promote the increase of network value and reduce the risk.
+
+The protocol allocates less than 50% storage mining quota for simple decay mechanism and more than 50% storage mining quota for benchmark mechanism. A simple mechanism can provide reaction force and anti-vulnerability when the network is influenced. Benchmark mechanism can start with a small percentage of global storage today, then proliferate and get a higher but still reasonable proportion of global storage in the future.
+
+Finally, it should be noted that although block rewards can encourage participation, they cannot be regarded as a resource that can be exploited and abused. This is a subsidy pool that benefits both the ecosystem and the participants, providing seeds and subsidies for the formation and growth of the network.
+
+**3.1.2 Token Distribution**
+
+The distribution plans of CNFS token (CNX) are as follows: the limit is 10 billion CNX. In the allocation of genesis block of CNFS, 3.5% (350 million) of the total amount of CNX is allocated to funding usage, which is linearly released in two years, of which 2% (200 million pieces) is used for private offering, and 1.5% (150 million pieces) is used for public offering. All of the funds will be used for project R&D, ecosystem development and many other sectors; 0.5% (0.5 billion) is reserved for the initial stage of ecosystem construction, which is used to reward the contributors who are not clearly defined or mentioned in the whitepaper; 5% (500 million) of CNX are allocated to the laboratory team, which will be linearly released in four years; 6% (600 million) will be allocated to CNFS foundation, and this part will be released according to the six-year linear model; The remaining 85% (8.5 billion) were allocated to CNFS miners as mining rewards for their contribution like data storage services, maintaining Blockchain, distributing data, running contracts, etc. These rewards will support multiple types of mining, so this section will be broken down to cover different types of mining activities.
+
+### 3.1.3 Token Application Scenario
+
+**Mode Qualification**
+Any member who applies for the CNFS ecosystem obtains membership as the corresponding node needs to stake certain CNX tokens. Node members can obtain the essential services of the CNFS ecosystem, including the rights and interests of nodes with different levels and functions, such as technical support and supporting services for accessing the commercial network.
+
+**Storage Mining**
+Storage miner is the only miner group with an incentive when the network launches. This was also the earliest group of miners, who were also responsible for maintaining the core functions of the protocol. Therefore, a considerable part of the CNX mining reward will be distributed to this group. This part of the reward is mainly issued by block reward, which is used to reward the maintenance of Blockchain, run contracts, and provide reliable storage services. This section will also cover early miner rewards, such as those at the space race, and other potential storage miner startup options, such as faucets.
+
+**Mining Conditions**
+To participate in mining in the CNFS ecosystem and the corresponding hardware facilities involved in storage, it is necessary to stake the corresponding amount of CNX to obtain mining qualification, which is also one of the means to realize CNX deflation. Corresponding to different bandwidth storage facilities, one should stake the corresponding amount of CNX to meet the needs of mining conditions.
+
+**Mining Rewards**
+To build a robust ecosystem, the CNFS ecosystem needs to ensure that all miners who participate in the ecosystem construction have incentives (such as search miners, maintenance miners and many others). To ensure that the network can provide incentives for miners, a part of CNX will be reserved for mining incentive reserves. In the future, the community can decide how to distribute these tokens through CNFS improvement proposals or similar decentralized decision-making methods. For example, communities can choose to set up incentives for retrieval mining and other mining activities. Like other blockchain networks and open-source projects, the CNFS network will continue to evolve, adapt, and overcome challenges in the future. These reserved tokens are used to provide more flexibility for future miners and the whole ecosystem. Other mining activities that have not been subsidized, such as search mining, are also critical to the CNFS economy. These mining activities need a higher proportion of mining rewards. Many years later, as the network evolves, the community can decide whether the reserve is sufficient and whether it needs to adjust the unearthed tokens.
+
+**Asset trading**
+In the CNFS ecosystem, CNX will be the only value carrier circulating in the global business system, including but not limited to the CNFS ecosystem, financial market, digital asset trading market and many other forms. CNX will be the value carrier circulating through the exchange of digital assets or the sale of fiat money in a legal way.
+
+**Ecological fuel**
+CNX is the value carrier of the CNFS ecosystem, and the consumption mechanism of CNX is a vital process to maintain the ecosystem. In addition to the CNX destroyed due to storage failure and consensus failure, some CNX is also eliminated as the network transaction fee for the computation and bandwidth in the payment chain, bringing long-term deflationary pressure to CNX. Usually, there is also a message packing priority fee. Instead of being burned, the packing priority fee is directly sent to the miner who packages the message.
+
+**Community Veting**
+In line with the original intention of decentralizing the CNFS ecosystem to promote more CNX holders to participate in the construction of the network ecosystem fully, the CNFS foundation will establish a community and the voting mechanism to protect the management and discourse rights of the network ecosystem the network ecosystem the community members.
+
+**Market Value Carrier**
+The total value of the circulation of CNX is the total market value of CNX. Many communities use different calculation methods to estimate the market value of digital currency and tokens. However, the most reasonable way to calculate the market value is the supply of CNX (total circulation supply tokens). Using other methods of significant calculation amounts is likely to be a false exaggeration and should not be believed.
+
+### 3.2 Ecological Community
+**3.2.1 CNFS Application Scenario**
+Blockchain has the characteristics of decentralization, P2P transmission, transparency, traceability, non-tampering, data, etc. It’s to solve some pain points of existing business and realize the innovation of the business model. Aiming at the difficulties of distributed data storage, the CNFS laboratory team provides its own soon through the decentralized storage network based on CNFS protocol. Moreover, Blockchain will also play an essential role in other existing or potential application scenarios, such as medical, construction and energy. The ecological panorama of CNFS is shown in Figure 6
+
