@@ -5,8 +5,8 @@ World's first blockchain technology protocol which provides controllable risk, c
 
 ## Table of contents
 
-- [Technology and Industry Overview]
-  - [Blockchain Technology]
+- [Technology and Industry Overview](#technology-and-industry-overview)
+  - [Blockchain Technology](#blockchain-technology)
   - [Market Prospect]
   - [Existing Problems]
  - [CNFS Project Introduction]
@@ -224,3 +224,116 @@ The total value of the circulation of CNX is the total market value of CNX. Many
 **3.2.1 CNFS Application Scenario**
 Blockchain has the characteristics of decentralization, P2P transmission, transparency, traceability, non-tampering, data, etc. It’s to solve some pain points of existing business and realize the innovation of the business model. Aiming at the difficulties of distributed data storage, the CNFS laboratory team provides its own soon through the decentralized storage network based on CNFS protocol. Moreover, Blockchain will also play an essential role in other existing or potential application scenarios, such as medical, construction and energy. The ecological panorama of CNFS is shown in Figure 6
 
+**(1) Architecture**
+The construction industry should comprehensively upgrade the informatization and actively explore the sharing and exchange of data, break the information gap or isolated island, realize cross-functional business linkage, shorten the project progress, and improve the project quality and economic benefits. With the emergence of building information modelling (BIM) and other technologies, all participants in the design and construction of the construction industry can cooperate in the whole process on a common platform so that the original scattered construction industry, its production, operation, and management level can also achieve effective integration, and gradually become the trend of the construction industry.
+
+The architecture industry should comprehensively upgrade itself in the informatization era and actively explore new ways of data sharing and exchange to break the information gap, realize cross-functional business coordination, shorten the project progress, and improve the project quality and economic benefits. With the emergence of building information modelling (BIM) and other technologies, all participants in the design and construction of the architecture industry can cooperate in the whole process on a universal platform. So, the production, operation and management level of previous independent groups or individuals can also achieve effective integration and gradually become the trend of the architecture industry.
+
+Although the architecture industry has gained many improvements, it is undeniable that there are still significant shortcomings and potential risks. In the current market, there are such phenomena as cross-regional information is not transparent, resources cannot be shared, illegal bidding, credit and regulatory mechanism failure, which hinder enterprises' market development. A lot of information and data will be generated in project implementation, such as contracts, drawings, change orders, on-site measurement sheets, etc. These electronic materials are easy to be modified in the iterative forwarding process. Once there is a problem, it is often difficult to find the source and investigate the responsibility.
+
+CNFS is integrated with digital technology, distributed storage of massive BIM data. It uses a digital way to create a virtual model of physical entities. With the help of data to simulate the behavior of physical entities in the real environment, virtual real interaction feedback, data fusion analysis, decision-making iterative optimization, and other means, the new capabilities for physical entities are well expanded. It becomes the key to solve the development problems of the architecture industry. 
+
+It is necessary to evaluate the bidding enterprise's qualification, personnel qualification, and credit in the bidding process. Traditionally, detailed prequalification documents need to be prepared, and the bidder also needs to pay a lot of time and resources to review the qualification documents. Integrating blockchain technology into the credit platform of the construction industry can well improve the prequalification and formal bidding competition of bidding activities, ensure the process is open and transparent, and prevent vicious competition and human intervention. In construction management, blockchain technology can reduce the confirmation time of the authenticity of construction documents, facilitate the collection and storage of various construction data, track the Data on the chain, and avoid malicious tampering of information by others.
+
+**(2) Energy**
+With the advancement of the energy revolution, energy is gradually transforming to clean and distributed. The proportion of renewable distributed energy with high efficiency, flexible operation and sound economy in the energy system is gradually increasing. It has become an essential source of power generation. Green energy may become a strategic highland for developed countries in the world. Unlike traditional energy trading, distributed energy trading has massive participants, a small amount, scattered location, etc. Moreover, the frequency of energy trading is very high, which will improve the operation cost of the transaction. In addition, there are some problems in energy trading, such as the difficulty of information authenticity verification, data sharing, high transaction cost, low collaboration efficiency and data privacy protection.
+
+CNFS ecosystem can create a more visible, more credible and more reliable regulatory environment to solve the problems of carbon trading, such as complex accounting, supervision and assessment due to multiple industries of carbon emission subjects, inconsistent carbon emission evaluation and analysis standards, imperfect carbon emission market mechanism and other factors.
+
+CNFS uses blockchain technology to coordinate carbon trading entities, trading institutions, and governments to build a flexible and interactive carbon asset trading mode. It realizes the chain storage and reliable sharing application of the whole process data of carbon trading from proper emission acquisition, trading, circulation to transaction verification and statistics. Thus, the carbon emission quota can be traded under the condition of "visible to all". And it builds a system of all parts and the whole process to promote the transparency and orderliness of the global carbon emission trading market.
+
+CNFS ecosystem creates a safer, more efficient and more economic market environment for carbon trading. Carrying out efficient and economical carbon trading activities will strongly stimulate the enthusiasm of crucial carbon emission enterprises to participate in market trading, encourage enterprises to carry out technological innovation and upgrade the industrial structure, and promote enterprises to save energy and reduce emissions from the source. We should give full play to the technical characteristics of Blockchain, such as distributed ledger and traceability, effectively aggregate the upstream and downstream carbon quota trading information of low-carbon industrial chain, break through the data island of each part of carbon trading, apply the blockchain smart contract to support the carbon trading service of bilateral and listing equality. Meanwhile, with the help of blockchain signature technology, it can ensure that the trading data can be traced and can’t be tampered with. Also, it provides the authenticity, safety and efficiency of carbon trading activities from every part and builds a safe and efficient business environment for the carbon trading market.
+
+**(3）Medical**
+The medical industry has unique requirements for the privacy protection of patients. With the popularity of cloud storage and mobile health devices, data recording and sharing have become more common in the Internet era. The risk of malicious attacks and the risk of privacy information leakage during sharing is also increasing. Patients usually go to multiple hospitals, so sharing medical and health information is worthy of attention.
+
+Blockchain technology can be used to support access control, data sharing and medical activity audit tracking management. The medical system based on blockchain technology can improve the security and reliability of patient data so that patients can control and share their medical data records. The medical system integrated into the Blockchain can also help integrate patient data and realize the sharing of medical record information between different medical institutions. In addition, Blockchain has the characteristics of data tampering, timestamp and information traceability, which can be well applied to the medical anti-counterfeiting traceability system, making the traceability function of the system better. It is worth noting that the current medical data on the chain is the main direction of medical enterprises, such as the liver health status data written into the Blockchain, which will help the medical industry to develop better.
+
+**(4) Vehicle-to-everything**
+In recent years, with the gradual development of the smart city and smart transportation, Vehicle-to-everything has been widely concerned. The Vehicle-to-everything can generate a large number of diverse data through advanced onboard equipment. Vehicles collect and share data to improve driving safety and achieve better service quality of its system. For example, the car can automatically determine the driving plan by receiving the event, road condition and other information broadcast by other vehicles.
+
+However, there are serious security and privacy challenges in data sharing on the Internet of vehicles. Users may be reluctant to upload vehicle data to the network for privacy protection and fear a single point of failure in centralized management. Although P2P data sharing can solve centralized management architecture, it still faces illegal data access and security in a distributed architecture. If malicious vehicles are spreading false information, it will cause severe interference to standard vehicles and even threaten the personal safety of drivers.
+
+CNFS ecosystem carries a large amount of Internet of vehicles data, enabling the Blockchain to the Internet of vehicles. Vehicle failure and traffic accidents will be permanently recorded in the Blockchain due to the features of Blockchain, which can solidify the evidence and solve the integrity problem of vehicle data. It can be accessed, including auto repair, auto parts, vehicle management, auto manufacturer, car rental, insurance, etc. The smart contract can automatically execute the transaction and record the complete lifecycle of the vehicle.
+
+It can improve the safety of driving and the efficiency of service provider management by sharing the data information protected by the Blockchain; the data rendering is completed in advance between vehicles, between vehicles and people, between vehicles and service providers, etc. By collecting data inside and outside the vehicle during driving, users have their data, which can be shared with the third party (such as the second-hand trading market, insurance industry, etc.) to obtain integrity data value and user profit.
+
+**(5) A.I. computing power**
+With the exponential development of big data, the Internet of things, sensors and other technology fields in the past few years, artificial intelligence applications have begun to explode. A.I. applications like face recognition and voice interaction technology have started to influence our lives. Artificial intelligence applications intelligence needs to train the model by the neural network, which requires many computing resources. More Data needs a longer training time, which is highly disadvantageous to the iterative updating of products and will cause manufacturers to invest a lot of money in purchasing hardware resources such as GPU. After the product service launches, the model still needs to be trained, but the user's access period or frequency will also change from time to time. If many computing resources are purchased at one time, there will be a lot of idle resources. Artificial intelligence should obtain high-quality Data continuously, but a lot of data involves user privacy. Users are unwilling to disclose their private data, which limits the development of companies.
+
+CNFS team provides a new solution for the above challenges. A distributed A.I. computing platform based on blockchain technology is designed to realize the flexible distribution of computing power, reduce the computing cost of enterprises and individuals, and protect the data privacy of sellers through anonymous nodes on the chain.
+
+### 3.2.2 CNFS Ecological Applications
+**(1) CNFs browser**
+The developing path to truly decentralized networks is very hard. For more than 30 years, the browser has always existed as a client - but in the evolution of the P2P system, the browser, as a participant, is both a client and a server. Those web browser developers and web standards organizations have not designed their systems that support P2P protocol. Integrating CNFS in the browser is to simplify the access to the HTTP gateway of CNFS, to build a bridge between hundreds of millions of people in the traditional network and the content of the distributed network. To sum, users can directly access the Data on the CNFS network through a regular browser, which is a client and has the same function as a server as a native CNFS node. This will simplify the process of user participation and promote the large-scale application of CNFS.
+
+**(2) Data exchange platform**
+The data exchange platform is based on distributed storage. It builds the business closed loop through distributed storage network and CNFS platform and realizes the marketization of business data files. The e-commerce (customer to customer, C2C) transaction between individuals is realized.
+
+It allows people to trade digital goods (e.g., art, code, video, music) to generate revenue from their data. All data are stored in the CNFS platform safely so that transactions can be carried out without the participation of any third party, and the minimum cost can be ensured. We are building a license-free P2P data exchange platform for data licensing, exchange and storage services.
+
+# 04
+## Core Advantages
+### High security
+The five-layer protocol stack of CNFS provides security protection for data generation to data acquisition, data storage and data application. It adopts the most advanced data encryption technology to realize reliable security protection with 0% cracking rate of existing technology.
+
+### Privacy protection
+CNFS five-layer protocol stack provides full lifecycle data hash encryption and encryption repair technology for data, ensuring anti-collision and protecting data integrity of 99.999%.
+
+### Fault tolerance
+Decentralized systems are less likely to fail unexpectedly because they rely on many independent components that are unlikely to fall simultaneously.
+
+### Optimized incentive
+The economic model is designed by a professional team to provide users with a safe and secure income model.
+
+### Anti-centralization
+According to the optimized Byzantine algorithm, more than 51% of the data nodes are under control to achieve anti-collision.
+
+### Massive Data 
+In the initial stage of CNFS ecological network construction, the world's first open network storage of medical data has been achieved. The data pool includes massive high-quality data in agriculture, architecture, Internet of vehicles, finance and many other fields, providing valuable data capital for distributed computing.
+
+# 05
+## Routines
+To ensure the decentralization, enhance the security of customer assets and the credibility of CNFS ecosystem. It will carry out project development and ecological construction under the following planning path and gradually realize the diversified development of the whole ecosystem. Its development process and planning routines are as follows:
+
+### CNFS Roadmap:
+Form a project team in 2019 to investigate the future development of distributed storage and distributed computing market
+- 2020, Q1
+  - CNFS project development begins
+- 2020, Q2
+  - Launch CNFS global node for data test of 4 continents
+- 2020, Q3
+  - The first application of CNFS launches
+- 2020, Q4
+  - As the next-generation Internet infrastructure of Web3.0, CNFS   
+- 2021, Q1
+  - CNFs officially launches Silicon Valley Laboratory
+  - CNFS provides data application on Blockchain for carbon neutral
+- 2021, Q2
+  - CNFS officially launches Hong Kong Laboratory
+  - CNFS starts the medical image data storage test
+- 2021, Q3
+  - CNFS testnet launches
+  - Developers.cnfs.com launches
+  - Global space race starts (on testnet)
+- 2021, Q4
+  - CNFS mainnet launches
+  - CNFS client launches
+- 2021, Q4
+  - CNFS releases the complete developer kit
+  - CNFS releases the network accelerator
+  - Develops CNFS global community
+- 2021, Q4
+  - Releases v1.0.2 beta version of CNFS mainnet and integrated into CNX token economy
+- 2022, Q1
+  - Releases an easy-to-use CNFS host operation interface
+  - Integrated to Windows client
+  - Attracts developers to build and develop on CNFS network.
+- 2022, Q2
+  - Releases easy-to-use CNFS renter operation interface
+  - Renter contract modification feature
+  - Help partners deploy CNFS technology
+
+# 06
+## Disclaimer
+As a technical whitepaper, this paper introduces the current and future development of CNFS platform and ecosystem. This paper is for reference only and should not be used as a statement of future intention. Unless otherwise specified, the products and innovations proposed herein are currently under development. CNSs makes no warranty or statement regarding the successful development of such technology and innovation or the realization of any other activities described herein. And to the extent permitted by law, it assumes no warranty implied by law or otherwise. No one should rely on the content of this document or any inference drawn from it to make decisions, including any interaction with CNFS or the technologies mentioned herein. CNFS shall not be liable for any loss or damage (whether foreseeable or not) caused by individuals relying on any information or opinions related to CNFS, information or statements about CNFS platform and ecosystem contained in this white paper, or information related to any further consultation. The information contained in this white paper is derived from information that CNFS considers to be obtained from trusted sources and reflects the information truthfully. However, CNFS does not guarantee the accuracy, completeness, or applicability of the above information. You or any of your employees, creditors, security holders or other interest holders or any other person shall not rely on the information or the rights or conferred by the information. Any opinions expressed in this whitepaper reflect the current judgment of the author and do not necessarily represent the opinions of CNFS laboratory. Opinions reflected in this article are subject to change without prior notice. CNFS has no obligation to modify, amend or update this document or otherwise notify readers of any change or subsequent error in any matter or any opinion, investment, forecast or estimate described herein. CNFS and its employees shall not be liable for any personal loss caused by any express or implied statement, opinion or information arising from the content or omission of this white paper. Neither CNFS nor its consultants independently verify any information, including forecasts, prospects and forecasts contained herein. Despite our best efforts to ensure the accuracy of the factual statements set forth herein, all estimates, forecasts, prospects, expressions of opinion and other subjective judgments set forth herein are based on assumptions deemed reasonable as of the date of this document and shall not be construed as statements of impending events. Any plan or forecast mentioned in this article may not be realized due to a variety of risk factors, including but not limited to technology development, legal or regulatory risk, market fluctuation, sector change, enterprise behavior or lack of complete and accurate information. Each reader relies on his knowledge, investigation, judgment, and evaluation to confirm the accuracy and integrity of the information. Without the prior written consent of CNFS, no individual may redistribute, copy, or transfer the contents of this article to any other individual or publish it in part or whole for any purpose. By accessing this whitepaper, readers of this white paper agree to be bound by the above restrictions.
