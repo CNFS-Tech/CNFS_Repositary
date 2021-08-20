@@ -6,7 +6,7 @@ World's first blockchain technology protocol which provides controllable risk, c
 ## Table of contents
 
 - [Technology and Industry Overview](#technology-and-industry-overview)
-  - [Blockchain Technology](#1.1-blockchain-technology)
+  - [1.1 Blockchain Technology](#1.1-blockchain-technology)
   - [Market Prospect]
   - [Existing Problems]
  - [CNFS Project Introduction]
