@@ -7,16 +7,16 @@ World's first blockchain technology protocol which provides controllable risk, c
 
 - [Technology and Industry Overview](#technology-and-industry-overview)
   - [Blockchain Technology](#blockchain-technology)
-  - [Market Prospect]
-  - [Existing Problems]
- - [CNFS Project Introduction]
-  - [Technology Introduction]
-  - [Distributed Storage]
-  - [Distributed Computing]
- - [Business Model]
- - [Core AAdvantages]
- - [Routines]
- - [Disclaimer]
+  - [Market Prospect](#market-prospect)
+  - [Existing Problems](#existing-problems)
+ - [CNFS Project Introduction](#cnfs-project-introduction)
+  - [Technology Introduction](#technology-introduction)
+  - [Distributed Storage](#distributed-storage)
+  - [Distributed Computing](#distributed-computing)
+ - [Business Model](#business-model)
+ - [Core Advantages](#core-advantages)
+ - [Routines](#routines)
+ - [Disclaimer](#disclaimer)
 
 ## Abstract
 
@@ -65,7 +65,7 @@ The core concept of Blockchain is a decentralized distributed ledger, which is c
 
    Unlike traditional centralized systems, decentralized distributed storage has the characteristics of P2P and joint participation, which ensures the freedom and privacy of participants. Taking Blockchain as an instance, all participants are equal in rights and obligations, and there are no third-party organizations to manage them. Once the content is stored in the Blockchain, it is difficult to tamper with. However, there are also some disadvantages because it leads to a lack of supervision. There may be someone maliciously spreading some illegal files in the platform, which is difficult to delete, making the network a hotbed of illicit data storage.
 
-### 1.2	Market Prospect
+### Market Prospect
 
 The birth and popularization of the Internet have stimulated the rapid development of information technology, making modern society from the industrial age to the information age.
 
@@ -75,7 +75,7 @@ Data storage is the primary problem in information processing, which provides th
 
 Nowadays, global data storage and data computing are facing a subversive revolution from centralization to distribution. Many tech giants take the lead in the layout of new technologies. The market related to distributed technologies shows a rapid development trend. The future development prospect of the distributed data storage and data computing industry is promising.
 
-### 1.3	Existing Problems
+### Existing Problems
 
 **Security**
 Blockchain is born for security, but also undertakes security threats. Security threat is one of the most critical issues that Blockchain has faced so far. Blockchain is facing the challenges of algorithm security, protocol security, usage security, implementation security, and system security from the analysis.
@@ -96,7 +96,7 @@ The existing schemes do not consider the data access control problem in the proc
 
 # 02
 ## CNFS Project Introduction
-### 2.1	Technology Overview 
+### Technology Overview 
 
 CNFS consists of a new set of Internet application layer protocols for modern Internet resources and facilities, a redefined cloud services, edge computing, Blockchain, data distribution, data fusion and distributed storage. It’s the optimal solution under the condition of the modern Internet. By integrating the P2P network, distributed hash table (DHT), data encryption and fragmentation, IPFS network protocol, multichain incentive mechanism, block exchange and other technologies, a distributed storage network dispersed, which forms a new computing paradigm and cooperation mode in an untrusted competitive environment with meager cost, and it provides high quality and low-price file storage service for the world. QEDB quantum database is built based on CNFS blockchain nodes. CNFS protocol supports the creation of fully distributed applications. It aims to construct a network file system under the supervision of security nodes where users can upload, store, and share files freely in a distributed way. The technical architecture of CNFS is shown in Figure 1
 
@@ -110,7 +110,7 @@ The distributed computing layer dynamically allocates computing tasks to the edg
 
 The blockchain application management layer aims to realize the cross-chain interconnection of many heterogeneous blockchain applications and form a distributed blockchain application network with interconnection, interoperability and mutual trust based on massive data. Through multichain ecological consensus, the connection between decentralized blockchain platforms is realized, the atomicity of cross-chain operation is solved, and the value exchange of multichain ecology on the CNFS platform is realized. For different ecological applications, multiple Dapps are built based on the multichain blockchain structure to realize the trusted value exchange on the chain. It’s a trustful distributed application trading platform with a transparent transaction process, whole chain supervision, disintermediation, and data privacy protection. The central currency trusteeship is eliminated. The consensus mechanism of group supervision and management plan is adopted. The smart contract is executed automatically to form an autonomous community with independent value interaction.
 
-### 2.2	Distributed Storage
+### Distributed Storage
 **Mimicry architecture for metadata services**
 
 Metadata node is a high-risk target in the distributed storage system, which is the preferred target for attackers regarding the difficulty of implementation and the benefits. Similarly, from the perspective of defenders, if we can protect metadata services through the CMD security mechanism, we can get the maximum-security benefits; In terms of protection cost, we need to pay extra cost and performance overhead for heterogeneous redundancy. Therefore, if metadata service is designated as pseudo protection boundary, it can significantly reduce the cost and the load pressure of agent and has better realizability. At the same time, for the protection of data nodes, the DHR structure could be optional. Based on existing block redundancy, heterogeneity is introduced to enhance the storage security of physical data blocks.
@@ -119,7 +119,7 @@ CNFS lab designed Mimic-HDFS architecture for metadata services. To reduce the c
 
 Aiming at the security problems in the current distributed storage systems, we introduce a dynamic, heterogeneous and redundant security mechanism to enhance the system's defense capability against vulnerabilities and Backdoors. Firstly, we analyze the main threats and attack methods the distributed storage systems face, locates their "core weakness, " and proposes a specific security construction method based on the cost and effectiveness of protection.
  
-## 2.3 Distributed Computing
+## Distributed Computing
  
 **2.3.1 Execute tasks**
 
@@ -174,7 +174,7 @@ This architecture is based on the reliable network resource execution environmen
 
 # 3
 ## Business Model
-### 3.1 token Mechanism
+### 3.1 Token Mechanism
 
 **Mixed Exponential Mechanism**
 
