@@ -6,7 +6,7 @@ World's first blockchain technology protocol which provides controllable risk, c
 ## Table of contents
 
 - [Technology and Industry Overview](#technology-and-industry-overview)
-  - [1.1 Blockchain Technology](#1.1-blockchain-technology)
+  - [Blockchain Technology](#blockchain-technology)
   - [Market Prospect]
   - [Existing Problems]
  - [CNFS Project Introduction]
@@ -29,7 +29,7 @@ CNFS consists of a new set of Internet application layer protocols for modern In
 
 # 01
 ## Technology and Industry Overview
-### 1.1 Blockchain Technology
+### Blockchain Technology
 
 Blockchain technology is the next generation of disruptive technology after the steam engine, power and Internet. If the steam engine has released people's productivity, the power has solved people's basic living needs, and the Internet has completely changed information transfer methods. As a machine designed for trust, the Blockchain may completely change the value transfer of the whole human society. The significance of Blockchain is that it can build a more reliable internet system and fundamentally solve the fraud and rent-seeking phenomenon in value exchange and transfer. With the popularization of blockchain technology, the digital economy will be more authentic, and the economic society will become fairer and more transparent.
 
