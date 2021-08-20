@@ -10,7 +10,7 @@ World's first blockchain technology protocol which provides controllable risk, c
   - [Market Prospect](#market-prospect)
   - [Existing Problems](#existing-problems)
  - [CNFS Project Introduction](#cnfs-project-introduction)
-  - [Technology Introduction](#technology-introduction)
+  - [Technology Overview](#technology-overview)
   - [Distributed Storage](#distributed-storage)
   - [Distributed Computing](#distributed-computing)
  - [Business Model](#business-model)
