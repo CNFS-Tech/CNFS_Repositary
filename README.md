@@ -131,3 +131,305 @@ Awaiting content from CNFS
 
 ## Additional resources
 
+
+CNFS Specifications
+
+数据吞吐
+高效率：CNFS算例集群巨大，要求节点及时写入大文件，保证封装数据的写入效率
+超高性能：CNFS要求数据可持续读，数据可达PB级别至EB级别
+
+数据读写
+随机读：每天48次（每半小时）的全量证明，要求存储平台具备极高的随机读取速率
+小文件合并：一次请求，一次读取，降低计算群CPU消耗
+
+数据安全
+数据不丢失：要求PB级至EB级数据量长久可灵活按需访问保存
+
+数据运维
+高效运维：超大容量必然由超大集群支撑，高效运维也是刚需
+
+
+
+CNFS - Content Addressed, Versioned, P2P File System
+
+
+
+Current state of CNFS
+
+ 2021 09月20-10月底 Alpha Network
+1. OPOW 共识协议
+2. 元数据管理
+3. 系统弹性扩展技术
+4. 存储层级内的优化
+• 2021 11月1-11月底 Bayes Network
+1. 应用和负载的存储优化技术
+2. 文件存储智能合约虚拟机(FSVM)发布
+3. 热数据的读取与使用
+4. 贝叶斯概率法则优化出块逻辑
+• 2021 12月-2022-2月 Milestone Network
+1. CNFS主网上线准备期
+2. Github代码开源
+2. 链上生态项目开发,钱包,浏览器
+3. 不同地区热数据的上传与读取
+4. 链上智能合约与存储协议的结合
+• 2022 Q2 CNFS主网生态扶植
+1. 黑客松链上存储应用开发
+2. 链上元宇宙 GameFi 开发
+3. Defi 相关应用开发
+4. 闪电支付网络
+• 2022 Q3 CNFS 隐私数据协议升级
+1. 零知识证明存储协议开发: 保护一定的数据上传的隐私证明
+2. P2P 协议的速度再升级: 加快网络的传输速度，增强应用体验
+• 2022 Q4 CNFS 全球跨链与存储接入
+1.底层跨链协议，对接DCEP,ETH,DOT等 实现CNX与其他链的原子交换
+2.符合一定标准的服务器存储设备接入
+
+
+
+Try it out
+Will coming soon
+
+A word on security
+
+The CNFS protocol and its implementations are still in heavy development. This means that there may be problems in our protocols, or there may be mistakes in our implementations. And — though CNFS is not production-ready yet — many people are already running nodes on their machines, so we take security vulnerabilities very seriously. If you discover a security issue, please bring it to our attention right away!
+
+If you find a vulnerability that may affect live deployments — for example, by exposing a remote execution exploit — please send your report privately to security@cnfs.assia. Please do not file a public issue.
+
+If the issue is a protocol weakness that cannot be immediately exploited, or something not yet deployed, just discuss it openly.
+
+
+Get involved
+
+The CNFS project is big — with thousands of contributors in our community — and you're invited to join! Check out the Community section of the CNFS Docs for all the details on how to get involved, including the official CNFS forums, our chat channels, social media, meetups and ProtoSchool workshops, and more.
+
+If you're interested in how the project is organized at a higher level, visit the CNFS Team & Project Management repo.
+
+There's also a weekly CNFS newsletter and regularly-updated blog.
+
+
+Protocol implementations
+
+Coming soon
+
+HTTP client libraries
+
+Coming soon
+
+GUIs and helper apps
+Coming soon
+Apps and data sets on CNFS
+Coming soon
+
+Specs and papers
+# CNFS Architecture Overview
+
+
+**Abstract**
+
+This spec document defines the CNFS protocol stack, the subsystems, the interfaces, and how it all fits together. It delegates non-interface details to other specs as much as possible. This is meant as a top-level view of the protocol and how the system fits together.
+
+Note, this document is not meant to be an introduction of the concepts in CNFS and is not recommended as a first pass to understanding how CNFS works. For that, please refer to the [CNFS paper](cnfs-p2p-file-system.pdf).
+
+# Table of Contents
+
+- 1. CNFS and the Merkle DAG
+- 2. Nodes and Network Model
+- 3. The Stack
+- 4. Applications and Datastructures -- on top of CNFS
+- 5. Lifetime of fetching an object
+- 6. CNFS User Interfaces
+
+# 1. CNFS and the Merkle DAG
+
+At the heart of CNFS is the MerkleDAG, a directed acyclic graph whose links are hashes. This gives all objects in CNFS useful properties:
+
+- authenticated: content can be hashed and verified against the link
+- permanent: once fetched, objects can be cached forever
+- universal: any datastructure can be represented as a merkledag
+- decentralized: objects can be created by anyone, without centralized writers
+
+In turn, these yield properties for the system as a whole:
+
+- links are content addressed
+- objects can be served by untrusted agents
+- objects can be cached permanently
+- objects can be created and used offline
+- networks can be partitioned and merged
+- any datastructure can be modelled and distributed
+- (todo: list more)
+
+CNFS is a stack of network protocols that organize agent networks to create, publish, distribute, serve, and download merkledags. It is the authenticated, decentralized, permanent web.
+
+
+# 2. Nodes and Network Model
+
+The CNFS network uses PKI based identity. An "cnfs node" is a program that can find, publish, and replicate merkledag objects. Its identity is defined by a private key. Specifically:
+
+```
+privateKey, publicKey := keygen()
+nodeID := multihash(publicKey)
+```
+
+## 2.1 multihash and upgradeable hashing
+
+All hashes in cnfs are encoded with a self-describing hash format. The actual hash function used depends on security requirements. The cryptosystem of CNFS is upgradeable, meaning that as hash functions are broken, networks can shift to stronger hashes. There is no free lunch, as objects may need to be rehashed, or links duplicated. But ensuring that tools built do not assume a pre-defined length of hash digest means tools that work with today's hash functions will also work with tomorrows longer hash functions too.
+
+As of this writing, CNFS nodes _must_ support:
+
+```
+sha2-256
+sha2-512
+sha3
+```
+
+
+# 3. The Stack
+
+CNFS has a stack of modular protocols. Each layer may have multiple implementations, all in different modules. This spec will only address the interfaces between the layers, and briefly mention possible implementations. Details are left to the other specs.
+
+CNFS has five layers:
+
+- **naming** - a self-certifying PKI namespace (CNNS)
+- **merkledag** - datastructure format (thin waist)
+- **exchange** - block transport and replication
+- **routing** - locating peers and objects
+- **network** - establishing connections between peers
+
+
+## 3.1 Network
+
+The **network** provides point-to-point transports (reliable and unreliable) between any two CNFS nodes in the network. It handles:
+- NAT traversal - hole punching, port mapping, and relay
+- supports multiple transports - TCP, SCTP, UTP, ...
+- supports encryption, signing, or clear communications
+- multi-multiplexes -multiplexes connections, streams, protocols, peers, ...
+
+
+
+## 3.2 Routing -- finding peers and data
+
+The CNFS **Routing** layer serves two important purposes:
+- **peer routing** -- to find other nodes
+- **content routing** -- to find data published to cnfs
+
+The Routing Sytem is an interface that is satisfied by various kinds of implementations. For example:
+
+- **DHTs:** perhaps the most common, DHTs can be used to create a semi-persistent routing record distributed cache in the network.
+- **mdns:** used to find services advertised locally. `mdns` (or `dnssd`) is a local discovery service. We will be using it.
+- **snr:** supernode routing is a delegated routing system: it delegates to one of a set of supernodes. This is roughly like federated routing.
+- **dns:** cnfs routing could even happen over dns.
+
+
+## 3.3 Block Exchange -- transferring content-addressed data
+
+The CNFS **Block Exchange** takes care of negotiating bulk data transfers. Once nodes know each other -- and are connected -- the exchange protocols govern how the transfer of content-addressed blocks occurs.
+
+The Block Exchange is an interface that is satisfied by various kinds of implementations. For example:
+
+- **Bitswap:** our main protocol for exchanging data. It is a generalization
+  of BitTorrent to work with arbitrary (and not known apriori) DAGs.
+- **HTTP:** a simple exchange can be implemented with HTTP clients and servers.
+
+## 3.4. Merkledag -- making sense of data
+
+ the CNFS **merkledag** (also known as IPLD - InterPlanetary Linked Data) is the datastructure at the heart of CNFS. It is an [acyclic directed graph] whose edges are hashes. Another name for it is the merkleweb.
+
+The merkledag data structure is:
+
+```protobuf
+message MDagLink {
+  bytes Hash = 1;    // multihash of the target object
+  string Name = 2;   // utf string name. should be unique per object
+  uint64 Tsize = 3;  // cumulative size of target object
+}
+
+message MDagNode {
+  MDagLink Links = 2;  // refs to other objects
+  bytes Data = 1;      // opaque user data
+}
+```
+
+The merkledag is the "thin waist" of authenticated datastructures. It is a minimal set of information needed to represent + transfer arbitrary authenticated datastructures. More complex datastructures are implemented on top of the merkledag, such as:
+
+- **git** and other version control systems
+- **bitcoin** and other blockchains
+- **unixfs**, a content-addressed unix filesystem
+
+
+## 3.4.1 Merkledag Paths
+
+The merkledag is enough to resolve paths:
+
+```
+/cnfs/QmdpMvUptHuGysVn6mj69K53EhitFd2LzeHCmHrHasHjVX/test/foo
+```
+
+- (a) Would first fetch + resolve `QmdpMvUptHuGysVn6mj69K53EhitFd2LzeHCmHrHasHjVX`
+- (b) Then look into the links of (a), find the hash for `test`, and resolve it
+- (c) Then look into the links of (b), find the hash for `foo`, and resolve it
+
+
+## 3.5 Naming -- PKI namespace and mutable pointers
+
+CNFS is mostly concerned with content-addressed data, which by nature is immutable: changing an object would change its hash -- and thus its address, making it a _different_ object altogether. (Think of it as a copy-on-write filesystem).
+
+The CNFS **naming** layer -- or CNNS -- handles the creation of:
+- mutable pointers to objects
+- human-readable names
+
+CNNS is based on [SFS]. It is a PKI namespace -- a name is simply the hash of a public key. Whoever controls the private key controls the name. Records are signed by the private key and distributed anywhere (in CNFS, via the routing system). This is an egalitarian way to assign mutable names in the internet at large, without any centralization whatsoever, or certificate authorities.
+
+
+# 4. Applications and Datastructures -- on top of CNFS
+
+The stack described so far is enough to represent arbitrary datastructures and replicate them across the internet. It is also enough to build and deploy decentralized websites.
+
+Applications and datastructures on top of CNFS are represented as merkledags. Users can create arbitrary datastructures that extend the merkledag and deploy them to the rest of the world using any of the tools that understand CNFS.
+
+
+## 4.1 unixfs -- representing traditional files
+
+The unix filesystem abstractions -- files and directories -- are the main way people conceive of files in the internet. In CNFS, `unixfs` is a datastructure that represents unix files on top of CNFS. We need a separate datastructure to carry over information like:
+
+- whether the object represents a file or directory.
+- total sizes, minus indexing overhead
+
+## 5. Lifetime of fetching an object.
+
+Suppose we ask an CNFS node to retrieve
+
+```
+/cnfs/QmdpMvUptHuGysVn6mj69K53EhitFd2LzeHCmHrHasHjVX/test/foo
+```
+
+The CNFS node first splits the path into components (discarding the `cnfs` prefix):
+
+```
+[ "QmdpMvUptHuGysVn6mj69K53EhitFd2LzeHCmHrHasHjVX", "test", "foo" ]
+```
+
+Then, the CNFS node resolves the components.
+The first component in an `/cnfs/...` path is always a multihash.
+The rest are names of links, to be resolved into multihashes.
+
+# 6. CNFS User Interfaces
+
+CNFS is not just a protocol. It is also a toolset. CNFS implementations include various tools for working with the merkledag, how to publish something, how to name something, etc. These interfaces may be critical to the survival of an implementation, or the project as a whole. These interfaces govern how people use CNFS, thus careful attention must be given to their design and implementation. 
+
+* * *
+
+# WIP Stack Dump:
+
+- How the layers fit together
+- How they call on each other
+- Mention all the ports
+- Mention all the interfaces with the user
+- Mention gateways
+
+
+Installation and update tools
+Coming soon
+
+Additional resources
+
+coming soon
