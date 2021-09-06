@@ -88,18 +88,6 @@ CNFS will tackle some of the common, yet critical problems related to data stora
   - CNFS Hands-on Introduction at Ethereum SV Meetup
   - Distributed Apps with CNFS
 
-## Current state of CNFS
-Awaiting content from CNFS
-
-## Try it out
-Awaiting content from CNFS
-
-## A word on security
-Awaiting content from CNFS
-
-## Get involved
-Awaiting content from CNFS
-
 ## Help and documentation (documentation)
 Awaiting content from CNFS
 
@@ -116,21 +104,6 @@ Awaiting content from CNFS
 - Yuque
 - CNFS forum
 - Medium
-
-## Protocol implementations
-
-## HTTP client libraries
-
-## GUIs and helper apps
-
-## Apps and data sets on CNFS
-
-## Specs and papers
-
-## Installation and update tools
-
-## Additional resources
-
 
 CNFS Specifications
 
