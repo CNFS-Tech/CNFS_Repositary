@@ -88,6 +88,12 @@ CNFS will tackle some of the common, yet critical problems related to data stora
   - CNFS Hands-on Introduction at Ethereum SV Meetup
   - Distributed Apps with CNFS
 
+## How to install CNFS
+**It takes just seconds to install and get going!**
+- [CNFS Desktop] (https://www.cnfs.tech/copy-of-command-line)
+- Command-line install
+- CNFS Companion
+
 ## Help and documentation (documentation)
 Awaiting content from CNFS
 
