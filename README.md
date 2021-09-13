@@ -90,7 +90,7 @@ CNFS will tackle some of the common, yet critical problems related to data stora
 
 ## How to install CNFS
 **It takes just seconds to install and get going!**
-- [CNFS Desktop] (https://www.cnfs.tech/copy-of-command-line)
+- [CNFS Desktop](https://www.cnfs.tech/copy-of-command-line)
 - Command-line install
 - CNFS Companion
 
