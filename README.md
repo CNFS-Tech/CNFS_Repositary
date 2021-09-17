@@ -113,19 +113,13 @@ Awaiting content from CNFS
 
 CNFS Specifications
 
-数据吞吐
-高效率：CNFS算例集群巨大，要求节点及时写入大文件，保证封装数据的写入效率
-超高性能：CNFS要求数据可持续读，数据可达PB级别至EB级别
+Data throughput High efficiency: The CNFS case cluster is huge, requiring nodes to write large files in time to ensure the efficiency of writing encapsulated data. Ultra-high performance: CNFS requires data to be read continuously, and the data can reach the PB level to the EB level.
 
-数据读写
-随机读：每天48次（每半小时）的全量证明，要求存储平台具备极高的随机读取速率
-小文件合并：一次请求，一次读取，降低计算群CPU消耗
+Data read and write Random read: Full proof of 48 times per day (every half an hour), requiring the storage platform to have a very high random read rate. Small file consolidation: one request, one read, reducing the CPU consumption of the computing group
 
-数据安全
-数据不丢失：要求PB级至EB级数据量长久可灵活按需访问保存
+Data security: No data loss: PB-level to EB-level data volume is required to be accessed and stored flexibly and on-demand for a long time
 
-数据运维
-高效运维：超大容量必然由超大集群支撑，高效运维也是刚需
+Data operation and maintenance Efficient operation and maintenance: Super-large capacity must be supported by super-large clusters, and efficient operation and maintenance is also a rigid need
 
 
 
@@ -133,35 +127,35 @@ CNFS - Content Addressed, Versioned, P2P File System
 
 
 
-Current state of CNFS
+### Current state of CNFS
 
- 2021 09月20-10月底 Alpha Network
-1. OPOW 共识协议
-2. 元数据管理
-3. 系统弹性扩展技术
-4. 存储层级内的优化
-• 2021 11月1-11月底 Bayes Network
-1. 应用和负载的存储优化技术
-2. 文件存储智能合约虚拟机(FSVM)发布
-3. 热数据的读取与使用
-4. 贝叶斯概率法则优化出块逻辑
-• 2021 12月-2022-2月 Milestone Network
-1. CNFS主网上线准备期
-2. Github代码开源
-2. 链上生态项目开发,钱包,浏览器
-3. 不同地区热数据的上传与读取
-4. 链上智能合约与存储协议的结合
-• 2022 Q2 CNFS主网生态扶植
-1. 黑客松链上存储应用开发
-2. 链上元宇宙 GameFi 开发
-3. Defi 相关应用开发
-4. 闪电支付网络
-• 2022 Q3 CNFS 隐私数据协议升级
-1. 零知识证明存储协议开发: 保护一定的数据上传的隐私证明
-2. P2P 协议的速度再升级: 加快网络的传输速度，增强应用体验
-• 2022 Q4 CNFS 全球跨链与存储接入
-1.底层跨链协议，对接DCEP,ETH,DOT等 实现CNX与其他链的原子交换
-2.符合一定标准的服务器存储设备接入
+2021 September 20-end of October Alpha Network
+1. OPOW consensus protocol
+2. Metadata Management
+3. System Flexible Expansion Technology
+4. Optimization within the storage hierarchy
+• 2021 November 1-11 end Bayes Network
+1. Storage optimization technology for application and load
+2. Release of File Storage Smart Contract Virtual Machine (FSVM)
+3. Reading and use of hot data
+4. Bayesian probability law optimizes block generation logic
+• 2021 December-2022-February Milestone Network
+1. CNFS mainnet online preparation period
+2. Github code open source
+2. On-chain ecological project development, wallet, browser
+3. Upload and read thermal data in different regions
+4. The combination of smart contracts and storage protocols on the chain
+• 2022 Q2 CNFS mainnet ecological support
+1. Hackathon chain storage application development
+2. On-chain Metaverse GameFi Development
+3. Defi related application development
+4. Lightning Payment Network
+• 2022 Q3 CNFS privacy data protocol upgrade
+1. Zero-knowledge proof storage protocol development: protect the privacy proof of certain data uploads
+2. The speed of P2P protocol is upgraded again: speed up the transmission speed of the network and enhance the application experience
+• 2022 Q4 CNFS global cross-chain and storage access
+1. The underlying cross-chain protocol, docking DCEP, ETH, DOT, etc. to achieve atomic exchange between CNX and other chains
+2. Access to server storage devices that meet certain standards
 
 
 
